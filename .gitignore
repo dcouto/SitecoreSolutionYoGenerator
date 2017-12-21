@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# .NET specific
+.vs
+\bin
+\obj
+*.user
