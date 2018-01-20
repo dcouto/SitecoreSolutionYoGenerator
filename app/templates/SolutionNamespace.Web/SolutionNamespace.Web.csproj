@@ -6,12 +6,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{78E1EAE0-7237-49FA-A535-884B52ADF95D}</ProjectGuid>
+    <ProjectGuid>{E6FDE417-AA37-4723-BDD9-904F82F34446}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SitecoreSolution.Web</RootNamespace>
-    <AssemblyName>SitecoreSolution.Web</AssemblyName>
+    <RootNamespace>SolutionNamespace.Web</RootNamespace>
+    <AssemblyName>SolutionNamespace.Web</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -63,6 +63,28 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolutionNamespace.Domain\SolutionNamespace.Domain.csproj">
+      <Project>{d408a27b-70f2-418c-a55e-d40118f8f275}</Project>
+      <Name>SolutionNamespace.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolutionNamespace.Framework\SolutionNamespace.Framework.csproj">
+      <Project>{3e390053-58d2-443b-bf02-d6137569f35b}</Project>
+      <Name>SolutionNamespace.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolutionNamespace.Services\SolutionNamespace.Services.csproj">
+      <Project>{4a91fd5c-a156-4abc-9b62-d839657f951d}</Project>
+      <Name>SolutionNamespace.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ApiControllers\readme.txt" />
+    <Content Include="Controllers\readme.txt" />
+    <Content Include="Models\readme.txt" />
+    <Content Include="Views\SolutionNamespace\Layouts\readme.txt" />
+    <Content Include="Views\SolutionNamespace\Renderings\readme.txt" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -76,9 +98,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>52442</DevelopmentServerPort>
+          <DevelopmentServerPort>59771</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52442/</IISUrl>
+          <IISUrl>http://localhost:59771/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

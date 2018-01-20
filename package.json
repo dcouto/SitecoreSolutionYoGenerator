@@ -1,17 +1,104 @@
 {
-  "name": "generator-sitecore-solution",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "yeoman-generator"
+  "_args": [
+    [
+      {
+        "raw": "generator-dotnetsolution",
+        "scope": null,
+        "escapedName": "generator-dotnetsolution",
+        "name": "generator-dotnetsolution",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\WINDOWS\\system32"
+    ]
   ],
-  "author": "",
-  "license": "ISC",
+  "_from": "generator-dotnetsolution@latest",
+  "_id": "generator-dotnetsolution@1.0.9",
+  "_inCache": true,
+  "_location": "/generator-dotnetsolution",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/generator-dotnetsolution-1.0.9.tgz_1508351695608_0.9786690401379019"
+  },
+  "_npmUser": {
+    "name": "thomazmoura",
+    "email": "thomaz.moura.dev@gmail.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "generator-dotnetsolution",
+    "scope": null,
+    "escapedName": "generator-dotnetsolution",
+    "name": "generator-dotnetsolution",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/generator-dotnetsolution/-/generator-dotnetsolution-1.0.9.tgz",
+  "_shasum": "3bfeb08ee817a3232b66227fc282c1777da5878a",
+  "_shrinkwrap": null,
+  "_spec": "generator-dotnetsolution",
+  "_where": "C:\\WINDOWS\\system32",
+  "author": {
+    "name": "Thomaz Moura"
+  },
+  "bugs": {
+    "url": "https://github.com/thomazpadilha/Generator.DotNetSolution/issues"
+  },
   "dependencies": {
-    "yeoman-generator": "^2.0.1"
-  }
+    "chalk": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "lodash": "^4.17.4",
+    "mocha": "^3.4.2",
+    "mocha-junit-reporter": "^1.13.0",
+    "path": "^0.12.7",
+    "yeoman-assert": "^3.0.0",
+    "yeoman-generator": "^1.1.1",
+    "yeoman-test": "^1.7.0",
+    "yo": "^2.0.0",
+    "yosay": "^2.0.0"
+  },
+  "description": "Implementação de arquitetura de solução .NET básica.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "3bfeb08ee817a3232b66227fc282c1777da5878a",
+    "tarball": "https://registry.npmjs.org/generator-dotnetsolution/-/generator-dotnetsolution-1.0.9.tgz"
+  },
+  "gitHead": "eb4247c63519de76cf7cd3fd006ebfc2d5f08ca1",
+  "homepage": "https://github.com/thomazpadilha/Generator.DotNetSolution#readme",
+  "keywords": [
+    "yeoman-generator",
+    ".NET",
+    ".NET Framework",
+    "PT-BR"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "thomazmoura",
+      "email": "thomaz.moura.dev@gmail.com"
+    }
+  ],
+  "name": "generator-dotnetsolution",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomazpadilha/Generator.DotNetSolution.git"
+  },
+  "scripts": {
+    "build-test": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=__buildpath__/test/testResults.xml",
+    "test": "mocha",
+    "yo": "yo ./app/index.js"
+  },
+  "version": "1.0.9"
 }
