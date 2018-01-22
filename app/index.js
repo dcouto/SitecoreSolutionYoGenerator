@@ -7,6 +7,7 @@ var replace = require('gulp-replace');
 var fs = require('fs');
 var _ = require('lodash');
 var chalk = require('chalk');
+const uuidv4 = require('uuid/v4');
 
 module.exports = class extends Generator {
     constructor(args, opts) {
@@ -64,11 +65,16 @@ module.exports = class extends Generator {
                 this.templatePath(),
                 this.templatePath("temp"), {
                     process: function(content) {
-                        var namespaceRegEx = new RegExp(/SolutionNamespace/, 'g')
-                        var nameRegEx = new RegExp(/SolutionName/, 'g')
+                        var namespaceRegEx = new RegExp(/SolutionNamespace/, 'g');
+                        var nameRegEx = new RegExp(/SolutionName/, 'g');
+                        var namespaceRegExLowercase = new RegExp(/solutionnamespace/, 'g');
+                        var sitecoreAccessGuid = new RegExp(/sitecoreAccessGuid/, 'g');
+
                         return content.toString()
                             .replace(namespaceRegEx, '<%= solutionName %>')
-                            .replace(nameRegEx, '<%= solutionShortName %>');
+                            .replace(nameRegEx, '<%= solutionShortName %>')
+                            .replace(namespaceRegExLowercase, '<%= solutionName %>')
+                            .replace(sitecoreAccessGuid, uuidv4());
                     }
                 }
             );
